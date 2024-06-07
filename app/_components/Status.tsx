@@ -121,8 +121,7 @@ const WORKS: workProps[] = [
     url: "https://opays.freetvx.com/",
   },
   {
-    image:
-      "https://opays.freetvx.com/wp-content/uploads/2023/08/Plan-de-travail-33-8.png",
+    image: "/",
     title: "E-Somba Network",
     role: "Software developer",
     date: "2024",
