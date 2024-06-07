@@ -73,6 +73,12 @@ const SIDE_PROJECTS: sideProjectProps[] = [
     description: "A tourism platform",
     url: "/",
   },
+  {
+    Logo: Rss,
+    title: "Githread",
+    description: "A social plateform",
+    url: "/",
+  },
 ];
 
 type sideProjectProps = {
@@ -113,6 +119,14 @@ const WORKS: workProps[] = [
     role: "Software developer",
     date: "2023-2024",
     url: "https://opays.freetvx.com/",
+  },
+  {
+    image:
+      "https://opays.freetvx.com/wp-content/uploads/2023/08/Plan-de-travail-33-8.png",
+    title: "E-Somba Network",
+    role: "Software developer",
+    date: "2024",
+    url: "/",
   },
 ];
 

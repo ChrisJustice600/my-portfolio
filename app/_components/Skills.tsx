@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import Code from "./Code";
 import Section from "./Section";
 import ExpressLogo from "./icons/ExpressLogo";
+import NextLogo from "./icons/NextLogo";
 import ReactLogo from "./icons/ReactLogo";
 import TailwindLogo from "./icons/TailwindLogo";
 
@@ -35,6 +36,14 @@ export default function Skills() {
           <p className="text-sm text-muted-foreground">
             My main framework is <Code>react</Code>. I also like{" "}
             <Code>node</Code> for the backend side
+          </p>
+        </div>
+        <div className="flex flex-col gap-2 flex-1">
+          <NextLogo size={42} />
+          <h3 className=" text-2xl font-semibold tracking-tight">Next</h3>
+          <p className="text-sm text-muted-foreground">
+            I like using <Code>Next</Code> to create the most powerful modern
+            full-stack applications
           </p>
         </div>
         <div className="flex flex-col gap-2 flex-1">
