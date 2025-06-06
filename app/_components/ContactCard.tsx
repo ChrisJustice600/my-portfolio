@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { ArrowUpRightIcon } from "lucide-react";
+import Link from "next/link";
 
 import { Card } from "@/components/ui/card";
 
@@ -9,6 +10,7 @@ const ContactCard = (props: {
   name: string;
   description: string;
   url?: string;
+  links?: { icon: any; url: string }[];
 }) => {
   return (
     <Card className="p-3 bg-accent/10  hover:bg-accent/30 transition-colors group flex items-center gap-4 flex-1">
@@ -31,6 +33,23 @@ const ContactCard = (props: {
         </div>
         <p className="text-xs text-muted-foreground">{props.description}</p>
       </div>
+      {props.links && (
+        <div className="flex gap-2">
+          {props.links.map((link, index) => (
+            <Link
+              key={index}
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <link.icon
+                size={16}
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              />
+            </Link>
+          ))}
+        </div>
+      )}
       <ArrowUpRightIcon
         className="group-hover:translate-x-2 mr-4 group-hover:-translate-y-2 transition-transform"
         size={16}
